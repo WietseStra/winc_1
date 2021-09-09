@@ -2,34 +2,67 @@
 <html>
 
 <head>
-    <title> Welcome to my site! </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <title> Welcome to my site! </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <div>
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-              <label>Your Name: <input type="text" name="name" /></label>   
-            </p>
-            <p>
-              <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <label>Your Role: <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label>
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-          
-   </div><!--./container -->
+  <div class="container">
+    <div class="box-1">
+      <h1>Welcome to my personal space</h1><br>
+
+    </div>
+    <span class="menu-bar">
+      <ul>
+        <li><a href="index.html">home page</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">contact page</a></li>
+        <li><a href="#">yet to make</a></li>
+        <li><a href="#">yet to make</a></li>
+      </ul>
+    </span>
+    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+      <div class="form-group">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your telephone number <input type="tel" name="number" /></label>
+        </p>
+        <p>
+          <label>Your age<input type="date" name="age" /></label>
+        </p>
+        <p><br>
+          <label>Man <input type="radio" name="gender"/> <br>Vrouw
+          <input type="radio" name="gender"/></label>
+        </p><br>
+        <p>
+        <label>Italiaans<input type="checkbox" name="checkbox" /></label>
+        <label>Dutch<input type="checkbox" name="checkbox" /></label>
+        <label>French<input type="checkbox" name="checkbox" /></label>
+        <label>American<input type="checkbox" name="checkbox" /></label>
+        </p><br>
+        <p>
+        <label>Favoriete kleur kookschort:<input type="color" name="color-picker" /></label>
+        </p><br>
+        <p>
+          <label>Biografie: <textarea name="message"></textarea></label>
+        </p><br>
+        <p>
+        <label>Upload je laatste recept:<input type="file" name="recept" /></label>
+        </p><br>
+        <a href="https://www.smulweb.nl">Dit is een link naar mijn favoriete recepten site!</p>
+        <p><br>
+          <button type="submit">Send</button> <button type="reset">reset</button>
+        </p>
+      </div>
+    </form>
+
+  </div>
+  <!--./container -->
 </body>
 
 </html>
